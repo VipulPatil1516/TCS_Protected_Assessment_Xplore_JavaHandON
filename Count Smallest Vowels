@@ -1,0 +1,41 @@
+**************************************************************************************************************************************************************************
+
+Write main method in Solution class.
+
+In the main method, write code to read a String value using Scanner and print the smallest vowel. Assume all input values are in lower case.
+
+E.g If the input value is "matrix" then output will be a (since there are two vowels a and i where a is smaller as per ASCII sequence).
+
+
+--------------------------------------------------
+Sample code snippet for reference:
+Please use below code to build your solution.
+--------------------------------------------------
+
+public class Solution
+{
+
+public static void main(String[] args)
+{
+//code to read value
+//code to display the result
+}
+
+}
+
+**************************************************************************************************************************************************************************
+import java.util.Scanner; 
+  class MyClass{ public static void main(String args[]){ 
+    Scanner str=new Scanner(System.in); 
+    String word=str.nextLine(); 
+    str.close();
+    String []vowels={"a","e","i","o","u"};
+       for(int i=0;i<vowels.length;i++){  
+          if(word.contains(vowels[i]))
+          {
+            System.out.println(vowels[i]);
+            break;
+            }
+          }
+        }
+     }
